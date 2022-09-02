@@ -1,0 +1,270 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+} 
+/* inicio - diseño del header  */
+
+a{
+    text-decoration: none;
+    color: white; 
+
+}
+header {
+    display: flex ; 
+    min-height: 70px;
+    background-color: #003f60ff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+.logo {
+     display: flex;
+     align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px; 
+
+}
+nav a{ 
+    font-weight: 600;
+    padding-right:10px ;
+}
+nav a:hover{
+    color: black;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+/* final - diseño del header  */
+
+/* incio - diseño del body  */
+body{
+    background-color: #ededed;
+}
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.flex{
+    flex:1;
+    min-width: 250px;/* limita el ancho para que no se pueda reducir mas de cierto tamaño */
+    
+}
+.flex:first-child  /* first-child : me divide los div como elementos distintos*/  { 
+    flex: 2 ; 
+    padding: 25px ;
+    background-color: white;
+    margin: 20px ;
+    margin-bottom: 0px;
+} 
+.flex div{
+
+    padding: 25px ;
+    background-color: white;
+    margin: 20px ;
+    
+
+}
+.x1{
+    text-align: center;
+
+}
+.flex div img{ 
+    max-width: 100%;
+    max-height: 100%;
+
+}
+/* final - diseño del body  */
+
+/* inicio - diseño del footer  */
+footer{
+    width: 100%;
+    background-color: #003f60ff;
+    color: black;
+    
+   
+}
+footer h1 {
+    color: white
+}
+.contenedor{
+    width: 100%;
+    max-width: 1200px;  
+    margin:auto;
+    padding: 40px;
+   
+  
+
+
+}
+.contenedor1{
+    display: flex;
+    justify-content:space-between;
+    
+    
+
+}
+.c1{
+    max-width: 400px;
+
+
+}
+.c1 h1{
+    font-size: 22px;
+}
+.c1 p{
+    font-size: 14px;
+color: #c7c7c7;
+margin-top: 20px;}
+
+.c2 {max-width: 400px;
+}
+.c2 h1 { 
+    font-size: 22px;
+
+}
+ .c2 .row{
+    margin-top: 20px;
+    display: flex;
+
+
+ }
+ .c2 .row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    max-width: 140px;
+
+    
+ }
+  
+
+  .c2 .row .a1 {
+    
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: rgb(1, 36, 55);
+    text-align: center;
+
+  } 
+  
+  .c2 .row .a2  {
+   
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: rgb(1, 36, 55);
+    text-align: center;}
+    
+    .c3{
+        max-width: 400px;
+
+    }
+    .c3 h1{
+        font-size: 22px;
+    }
+    .row2 {
+        margin-top: 20px;
+         display: flex;
+       
+    }
+    .c3 .row2 label{
+        margin-top: 10px;
+        margin-left: 20px;
+        color: white;
+        max-width: 150px;
+    } 
+    .c3 .row2 .a3 {
+    
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background-color: rgb(1, 36, 55);
+        text-align: center;
+    
+      } 
+      
+      .c3 .row2 .a4 {
+       
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background-color: rgb(1, 36, 55);
+        text-align: center;}
+
+        /*.c3 .row2 .a4:hover{
+            width: 60px;
+        }*/
+        
+
+        .contenedor2{
+            width:100%;
+            background-color: rgb(2, 46, 68); 
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .footer{
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 20px;
+        }
+        .copyright{
+            color: white;
+
+        }
+        .copyright a {
+            text-decoration: none;
+            
+        }
+        .Informacion{
+          color: white;
+        }
+        .Informacion a:hover{
+            color:rgb(1, 36, 55); 
+        }
+        
+        /* inicio de adaptacion para celulares
+         a traves de media query*/
+        @media screen and (max-width:1100px){
+            .contenedor1{
+                flex-wrap: wrap ; /*lo va ajustando 
+                sin poner 1 bajo de otro todo de golpe como lo 
+                haria con el block*/
+            }
+                .c1{
+                    max-width: 100%;
+                }
+                .c2.c3
+                {
+                    margin-top:40px;
+                  
+                }}
+
+       
+
+        
+  
+/* final - diseño del footer */
+
+
+
